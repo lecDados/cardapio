@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .caixa {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      color: white;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      padding: 20px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .caixa.expandida {
+      width: 200px;
+      height: 400px;
+    }
+
+    .texto-escondido {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      max-height: 0;
+    }
+
+    .caixa.expandida .texto-escondido {
+      opacity: 1;
+      max-height: 100px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="caixa" onclick="expandirCaixa(this)">
+    Clique para expandir
+    <div class="texto-escondido">
+      Aqui está o texto escondido que aparece quando a caixa é expandida!
+    </div>
+  </div>
+
+  <script>
+    function expandirCaixa(element) {
+      element.classList.toggle('expandida');
+    }
+  </script>
+
+</body>
+</html>

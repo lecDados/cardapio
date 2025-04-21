@@ -1,0 +1,35 @@
+.cardapio {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: sans-serif;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    background-color: #ccc;
+  }
+  
+  .conteudo {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
